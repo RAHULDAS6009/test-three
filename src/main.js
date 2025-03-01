@@ -44,12 +44,12 @@ Array(200).fill().forEach(addStar)
 
 //texture mapping
 
-const spaceTexture=new THREE.TextureLoader().load('space.jpg');
+const spaceTexture=new THREE.TextureLoader().load('https://media-hosting.imagekit.io//b3cd3eb9dab74a93/space.jpg?Expires=1835405656&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=WmKMiVonPEk-Tmri-aC4Y0ZkboGn2H6vlL1gilISxk2QTmsDJBeeEA2NMmn2M6acasD-ANGDcLB~4DXsW~nZ7U6ri7sCQ0YxYQiW5-zXEI1j-wvFUM4FAg2Z3rRJYU6YbqdAVGythPbGMAq1Q22ZsWbAGR69TK-G6vyIMtGqNkL2Zoenxmwf31mfxP3siFJ6X7dVam59A0hhET3YLxwQON6DKI8aylvuGuqPcnbpLttcuBaFoMZdxZofdwfvpxYWeQeZzd7gFuJL5qCPHr50Z-PIqt2VnuXe6j3BElqG3allGQZTN55BLThPACKfe0iy-xglRDhkIjkh-AsbSUaeOg__');
 scene.background=spaceTexture
 
 //Avatar
 
-const elonTexture=new THREE.TextureLoader().load('elon.png');
+const elonTexture=new THREE.TextureLoader().load('https://media-hosting.imagekit.io//507002a8b9824451/elon.png?Expires=1835405520&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=eEtHXXJdyFlc9ZtRT59SF1CiLLZO0e3b3aqs4C2WyqIsaPCflJMhG0fjG44HAXUprppXRpdChkQ5WC4Edr~tL7LNVSmzArSdDLnOMiGTwqpCaGCEBEycKotyQ4Vfx-xsAJrLcGS-GCdbFlgmZDNKKI-9cD7as1FoVwMqhd92QDNDSJOeBhdpjvPLA4ux0lABpT~UE028uF0swTyNoOHK8TsvlMVQGub2BR05jykZjjvD~Ym5j85PaYFxJ0leMK1Sv8ooZuTQJoB4jF~qFeoRS~oYRDZIupzDPvUBq3~nVpnhe~wqwFBehPCiG7VFT6~JqPzcmp6HeFeQ-d8Mh2HoFQ__');
 const elon=new THREE.Mesh(
   new THREE.BoxGeometry(3,3,3),
   new THREE.MeshBasicMaterial({map:elonTexture})
@@ -59,8 +59,8 @@ scene.add(elon);
 
 
 
-const moonTexture = new THREE.TextureLoader().load('moon.jpg');
-const normalTexture = new THREE.TextureLoader().load('normal.jpg');
+const moonTexture = new THREE.TextureLoader().load('https://media-hosting.imagekit.io//331048a31c1145d2/moon.jpg?Expires=1835405675&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=OKJmpeEzIfcqYSRM9apn0epOFcrn7T9r2J4VsH40GtLtgF8hAx0QudwGb6ZiB5jdo5LloKqiL1e10kUZGuya5OMKyA25qWcPIXb54g2fvls4pG3xpJZ74n9fLrKpYJBRpR9sMZSr4wkrAD9JG6SURZL0LKeW6nff98xLwaaJsX5-cFmHWum8Z4CO-J1A348fkQN~jZsEkWOTvHzQGelZv3Y0wkhSwfcVBO4GDLRYZoWlago8esMayR2ojcqzpUHc0jTc5urgaxKMRoTZbM~p6-z4C0rCAjvoAyHRx6Lo6ZB1Ybk5LsK1Lm~-uKwbDJ4Ci5bjjlSnYpHUCQrZUfYPUA__');
+const normalTexture = new THREE.TextureLoader().load('https://media-hosting.imagekit.io//71ae674fcb2644c4/normal.jpg?Expires=1835405665&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=ra6XYtK5pm-i0mv2R-X1gNnXJCZxHXyYXeNKxX8gmfjCjELxb6SzPLaV-7yDzzvWxc852ExAyjX8m8ZBOwejw8tD8KtZVkX~ItVwDhvJdIp-No1Al1WawI-hdWrTq53ojvbco-iaJ-cTghjrm~05h5Nr-~-Y3vjkGsBJ-pEFAaUmlgocvMjks~mWY5mZi5fwgyJK2n7ytvi0eXvUP5ZXxwOWpGyW5vwAkRNb5BeTVb5N4PpIwOmN~GRvw7zcVudh6dX6jiwsEjVw7sUVoCLQ-rcAeMKcPaF0yFU~CXKHwiODXBeQXZUkfwQzIUZfMaoxRF2IwbkNSAsW2f2zKVezfg__');
 
 const moon = new THREE.Mesh(
   new THREE.SphereGeometry(3, 32, 32),
